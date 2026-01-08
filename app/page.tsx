@@ -219,10 +219,56 @@ export default function AdidasListMock() {
         </div>
       </header>
 
+      {/* HERO — image + left stacked text boxes */}
+      <section className="relative w-full">
+        {/* Background image */}
+        <div className="relative h-[420px] w-full md:h-[520px]">
+          <Image
+            src="/meadi2.svg" // put your image in /public and set this path
+            alt="Hero"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+
+          {/* Optional: subtle dark overlay so text reads better */}
+          <div className="absolute inset-0 bg-black/10" />
+
+          {/* Left stacked boxes */}
+          <div className="absolute inset-0">
+            <div className="mx-auto flex h-full max-w-[1200px] items-end px-2 pb-10 md:pb-12">
+              <div className="w-full max-w-[520px] space-y-2">
+                <div className="inline-block bg-white/85 px-3 py-2 border border-black text-[18px] font-banner font-extrabold uppercase tracking-wide">
+                  CHRISTINE LAI
+                </div>
+
+                <div className="inline-block bg-white/85 px-3 py-2 text-[14px] leading-snug text-black/80">
+                  Computer Science, Business, and Human-Centered Design @ USC
+                  27’
+                </div>
+
+                <div className="inline-block bg-white/85 px-3 py-2 text-[14px] leading-snug text-black/80">
+                  Multi-disciplinary Creative, Fashion Designer, Business-Owner,
+                  and Engineer
+                </div>
+
+                <div className="pt-2">
+                  <button className="font-banner inline-flex items-center border border-black gap-2 bg-white/90 px-3 py-2 text-[14px] font-semibold hover:bg-white">
+                    Read what “You Got This” means to her{" "}
+                    <span aria-hidden>→</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Page content */}
       <section className="mx-auto max-w-[1200px] px-4 pb-16 pt-6">
         {/* breadcrumb + back */}
-        <div className="flex items-center gap-3 text-[13px] text-black/70">
+        {/* <div className="flex items-center gap-3 text-[13px] text-black/70">
           <a
             className="inline-flex items-center gap-2 font-semibold tracking-wide text-black hover:underline underline-offset-4"
             href="#"
@@ -239,10 +285,10 @@ export default function AdidasListMock() {
               Men
             </a>
           </span>
-        </div>
+        </div> */}
 
         {/* title row */}
-        <div className="mt-6 flex items-start justify-between gap-6">
+        {/* <div className="mt-6 flex items-start justify-between gap-6">
           <div className="max-w-3xl">
             <h1 className="text-[44px] font-black uppercase leading-[0.95] tracking-tight md:text-[56px] font-original">
               "YOU GOT THIS"
@@ -264,38 +310,9 @@ export default function AdidasListMock() {
               <span className="inline-block h-[2px] w-4 bg-current opacity-80" />
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* grid */}
-        <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
-          {products.map((p, idx) => (
-            <a key={p.id} href="#" className="group">
-              {/* image frame */}
-              <div className="border border-black/10 bg-white">
-                <div className="p-4">
-                  <PlaceholderShoe tone={idx % 2 === 0 ? "cool" : "warm"} />
-                </div>
-              </div>
-
-              {/* info */}
-              <div className="mt-3">
-                <div className="text-[14px] font-semibold">{p.price}</div>
-                <div className="mt-2 text-[14px] font-medium group-hover:underline underline-offset-4">
-                  {p.name}
-                </div>
-                <div className="mt-1 text-[13px] text-black/60">
-                  {p.category}
-                </div>
-                <div className="mt-1 text-[13px] text-black/60">{p.colors}</div>
-                {p.badge ? (
-                  <div className="mt-2 text-[12px] font-semibold text-black">
-                    {p.badge}
-                  </div>
-                ) : null}
-              </div>
-            </a>
-          ))}
-        </div>
       </section>
 
       {/* Right-side feedback tab (optional) */}
