@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { bannerFont, originalFont } from "./fonts";
+import { bannerFont, originalFont, titleFont } from "./fonts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bannerFont.variable} ${originalFont.variable}`}
+      className={`${bannerFont.variable} ${originalFont.variable} ${titleFont.variable}`}
     >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

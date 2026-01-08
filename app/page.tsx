@@ -110,6 +110,17 @@ function PlaceholderShoe({ tone = "cool" }: { tone?: "cool" | "warm" }) {
 export default function AdidasListMock() {
   const [promoOpen, setPromoOpen] = useState(false);
 
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
+
+  useEffect(() => {
+    if (!feedbackOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [feedbackOpen]);
+
   useEffect(() => {
     if (!promoOpen) return;
     const prev = document.body.style.overflow;
@@ -242,15 +253,13 @@ export default function AdidasListMock() {
                 <div className="inline-block bg-white/85 px-3 py-2 border border-black text-[18px] font-banner font-extrabold uppercase tracking-wide">
                   CHRISTINE LAI
                 </div>
-
-                <div className="inline-block bg-white/85 px-3 py-2 text-[14px] leading-snug text-black/80">
-                  Computer Science, Business, and Human-Centered Design @ USC
-                  27’
-                </div>
-
-                <div className="inline-block bg-white/85 px-3 py-2 text-[14px] leading-snug text-black/80">
+                <div className="inline-block bg-white/85 px-3 py-2 text-[14px] leading-snug text-black/80 font-title">
                   Multi-disciplinary Creative, Fashion Designer, Business-Owner,
                   and Engineer
+                </div>
+                <div className="inline-block bg-white/85 px-3 py-2 text-[14px] leading-snug text-black/80 font-title">
+                  Computer Science, Business, and Human-Centered Design @ USC
+                  '27
                 </div>
 
                 <div className="pt-2">
@@ -315,11 +324,125 @@ export default function AdidasListMock() {
         {/* grid */}
       </section>
 
-      {/* Right-side feedback tab (optional) */}
-      <div className="fixed right-0 top-1/2 hidden -translate-y-1/2 md:block font-original ">
-        <div className="rotate-180 [writing-mode:vertical-rl] border border-black/20 bg-white px-7 py-3 text-[18px]  tracking-wide text-black/70">
+      {/* Right-side feedback tab */}
+      <button
+        type="button"
+        onClick={() => setFeedbackOpen(true)}
+        className="fixed right-0 top-1/2 z-40 hidden -translate-y-1/2 md:block"
+        aria-label="Open feedback"
+      >
+        <div className="rotate-180 [writing-mode:vertical-rl] font-original border border-black/20 bg-white px-7 py-3 text-[18px] tracking-wide text-black/70 hover:bg-black hover:text-white">
           FEEDBACK
         </div>
+      </button>
+
+      {/* Feedback drawer (sibling, NOT inside the button) */}
+      <div
+        className={`fixed inset-0 z-50 ${
+          feedbackOpen ? "pointer-events-auto" : "pointer-events-none"
+        }`}
+        aria-hidden={!feedbackOpen}
+      >
+        {/* Backdrop */}
+        <div
+          onClick={() => setFeedbackOpen(false)}
+          className={`absolute inset-0 bg-black/30 transition-opacity duration-300 ${
+            feedbackOpen ? "opacity-100" : "opacity-0"
+          }`}
+        />
+
+        {/* Panel */}
+        <aside
+          className={`absolute right-0 top-0 h-full w-full max-w-[420px] bg-white shadow-2xl transition-transform duration-300 ${
+            feedbackOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Feedback"
+        >
+          {/* top bar */}
+          <div className="flex items-center justify-between px-6 pt-6">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/689347.jpg"
+                alt="Brand logo"
+                width={110}
+                height={40}
+                className="object-contain"
+              />
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setFeedbackOpen(false)}
+              className="grid h-10 w-10 place-items-center hover:bg-black/5"
+              aria-label="Close feedback"
+            >
+              <span className="text-3xl leading-none">×</span>
+            </button>
+          </div>
+
+          <div className="px-6 pb-10 pt-8">
+            <h2 className="text-[34px] font-original font-black uppercase tracking-tight">
+              YOUR EXPERIENCE
+            </h2>
+
+            {/* use <a> here so we don't add another button */}
+            <div className="mt-8">
+              <a
+                href="#"
+                className="text-[18px] font-semibold underline underline-offset-4"
+              >
+                GET HELP
+              </a>
+            </div>
+
+            <p className="mt-8 text-[20px] font-title leading-relaxed text-black/80">
+              Don’t hold back. Good or bad –{" "}
+              <span className="font-extrabold text-black">
+                tell it like it is.
+              </span>
+            </p>
+
+            <p className="mt-10 text-[20px] font-title leading-relaxed">
+              How likely are you to recommend{" "}
+              <span className="font-extrabold">Christine Lai</span> to a Adidas?
+              <span className="text-red-600"> *</span>
+            </p>
+
+            <div className="mt-6">
+              <div className="flex items-center justify-between text-[14px] text-black/70">
+                <span>Very unlikely</span>
+                <span>Very likely</span>
+              </div>
+
+              <div className="mt-3 grid grid-cols-11 gap-3">
+                {Array.from({ length: 11 }).map((_, i) => (
+                  <label key={i} className="flex flex-col items-center gap-2">
+                    <input
+                      type="radio"
+                      name="nps"
+                      value={i}
+                      className="h-5 w-5 accent-black"
+                    />
+                    <span className="text-[14px] text-black/70">{i}</span>
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            <button
+              type="button"
+              className="mt-10 inline-flex items-center gap-3 bg-black px-10 py-4 text-[16px] font-bold uppercase tracking-wide text-white hover:opacity-90"
+            >
+              NEXT <span aria-hidden>→</span>
+            </button>
+
+            <p className="mt-16 text-center text-[14px] text-black/40">
+              Protected by reCAPTCHA: Privacy &amp; Terms
+            </p>
+          </div>
+        </aside>
       </div>
     </main>
   );

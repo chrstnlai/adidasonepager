@@ -5,12 +5,16 @@
   --foreground: #171717;
 }
 
-.font-banner {
+.font-banner{
   font-family: var(--font-banner);
 }
 
 .font-original{
   font-family: var(--font-original);
+}
+
+.font-title{
+  font-family: var(--font-title);
 }
 
 @theme inline {

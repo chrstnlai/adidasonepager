@@ -12,3 +12,10 @@ export const originalFont = localFont({
   variable: "--font-original",
   display: "swap",
 });
+
+export const titleFont = localFont({
+  src: "../app/fonts/adihausdin_regular.otf",
+  variable: "--font-title",
+  display: "swap",
+});
+
