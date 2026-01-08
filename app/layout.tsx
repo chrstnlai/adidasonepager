@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "YOU GOT THIS",
+  title: "CHRISTINE LAI",
   description: "YOU GOT THIS",
 };
 

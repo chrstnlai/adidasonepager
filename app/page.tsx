@@ -1,8 +1,12 @@
 // app/adidas-mock/page.tsx
+"use client";
+
+import { useState, useEffect } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
+import PromoBannerDrawer from "./PromoBannerDrawer";
 
 const products = [
   {
@@ -104,67 +108,97 @@ function PlaceholderShoe({ tone = "cool" }: { tone?: "cool" | "warm" }) {
 }
 
 export default function AdidasListMock() {
+  const [promoOpen, setPromoOpen] = useState(false);
+
+  useEffect(() => {
+    if (!promoOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [promoOpen]);
   return (
     <main className="min-h-screen bg-white text-black">
+      <PromoBannerDrawer />
       {/* Top promo bar */}
-      <div className="h-10 w-full bg-black text-white">
-        <div className="mx-auto flex h-full max-w-[1200px] items-center justify-center px-4 text-[14px] tracking-wide">
-          <span className="uppercase font-banner">HI JOHN AND ADIDAS TEAM</span>
-          <ChevronDown className="w-6 h-8 text-white" strokeWidth={0.5} />
-        </div>
-      </div>
+      {/* Top promo bar */}
 
       {/* Header */}
       <header className="border-b border-black/10">
-        <div className="mx-auto max-w-[1200px] px-4">
+        <div className="mx-auto max-w-[1200px]  pl-16 pr-2 px-4">
           {/* utility row */}
           <div className="flex h-10 items-center justify-end gap-5 text-[12px] text-black/60">
             <a className="hover:text-black" href="#">
-              help
+              cmlai@usc.edu
+            </a>
+            <a
+              className="hover:text-black"
+              href="https://www.linkedin.com/in/chrstnlai"
+            >
+              Linkedin
             </a>
             <a className="hover:text-black" href="#">
-              wishlist
+              510-501-9938
             </a>
-            <a className="hover:text-black" href="#">
-              orders and returns
-            </a>
-            <a className="hover:text-black" href="#">
-              gift cards
+            <a
+              className="hover:text-black"
+              href="https://www.christinemlai.com/"
+            >
+              Portfolio
             </a>
           </div>
 
           {/* main row */}
-          <div className="flex items-center justify-between py-4">
+          <div className="flex items-center justify-between">
             {/* left logo placeholder */}
-            <Link href="#" className="flex items-center gap-2">
-              <div className="h-7 w-10 bg-black" />
-              <span className="text-[13px] font-semibold tracking-wide">
-                BRAND
-              </span>
+            <Link href="/" className="flex items-center gap-2">
+              <Image
+                src="/689347.jpg"
+                alt="Brand logo"
+                width={150}
+                height={150}
+                className="object-contain"
+              />
             </Link>
 
             {/* nav */}
-            <nav className="hidden items-center gap-8 text-[14px] font-semibold tracking-wide md:flex">
-              <a className="hover:underline underline-offset-4" href="#">
+            <nav className="hidden items-center gap-8 text-[16px] font-semibold tracking-wide md:flex">
+              <a
+                className="hover:underline underline-offset-4 font-banner"
+                href="#"
+              >
                 MEN
               </a>
-              <a className="hover:underline underline-offset-4" href="#">
+              <a
+                className="hover:underline underline-offset-4 font-banner"
+                href="#"
+              >
                 WOMEN
               </a>
-              <a className="hover:underline underline-offset-4" href="#">
+              <a
+                className="hover:underline underline-offset-4 font-banner"
+                href="#"
+              >
                 KIDS
               </a>
-              <a className="hover:underline underline-offset-4" href="#">
+              <a
+                className="hover:underline underline-offset-4 font-banner"
+                href="#"
+              >
                 SALE
               </a>
-              <a className="hover:underline underline-offset-4" href="#">
+              <a
+                className="hover:underline underline-offset-4 font-banner"
+                href="#"
+              >
                 NEW &amp; TRENDING
               </a>
             </nav>
 
             {/* search + icons */}
-            <div className="flex items-center gap-3">
-              <div className="hidden items-center gap-2 bg-black/5 px-3 py-2 md:flex">
+            <div className="flex items-center gap-1">
+              <div className="hidden md:flex items-center justify-between bg-black/5 px-2  min-w-[240px]">
                 <span className="text-[13px] text-black/60">Search</span>
                 <Icon name="search" />
               </div>
