@@ -125,10 +125,10 @@ export default function AdidasListMock() {
       {/* Top promo bar */}
 
       {/* Header */}
-      <header className="border-b border-black/10">
-        <div className="mx-auto max-w-[1200px]  pl-16 pr-2 px-4">
+      <header className="border-b border-black/10 ">
+        <div className="w-full px-10">
           {/* utility row */}
-          <div className="flex h-10 items-center justify-end gap-5 text-[12px] text-black/60">
+          <div className="flex pt-3 items-center justify-end gap-5 text-[12px] text-black/60">
             <a className="hover:text-black" href="#">
               cmlai@usc.edu
             </a>
@@ -150,7 +150,7 @@ export default function AdidasListMock() {
           </div>
 
           {/* main row */}
-          <div className="flex items-center justify-between">
+          <div className="flex h-12 items-center justify-between">
             {/* left logo placeholder */}
             <Link href="/" className="flex items-center gap-2">
               <Image
@@ -163,42 +163,36 @@ export default function AdidasListMock() {
             </Link>
 
             {/* nav */}
-            <nav className="hidden items-center gap-8 text-[16px] font-semibold tracking-wide md:flex">
+            <nav className="hidden md:flex ml-auto mr-30 items-center gap-8 text-[16px] font-semibold tracking-wide">
               <a
                 className="hover:underline underline-offset-4 font-banner"
                 href="#"
               >
-                MEN
+                FOUNDATION
               </a>
               <a
                 className="hover:underline underline-offset-4 font-banner"
                 href="#"
               >
-                WOMEN
+                BUILT
               </a>
               <a
                 className="hover:underline underline-offset-4 font-banner"
                 href="#"
               >
-                KIDS
+                GIVING
               </a>
               <a
                 className="hover:underline underline-offset-4 font-banner"
                 href="#"
               >
-                SALE
-              </a>
-              <a
-                className="hover:underline underline-offset-4 font-banner"
-                href="#"
-              >
-                NEW &amp; TRENDING
+                WHY ADIDAS
               </a>
             </nav>
 
             {/* search + icons */}
             <div className="flex items-center gap-1">
-              <div className="hidden md:flex items-center justify-between bg-black/5 px-2  min-w-[240px]">
+              <div className="hidden md:flex items-center justify-between bg-black/5 px-2 py-2 min-w-[240px]">
                 <span className="text-[13px] text-black/60">Search</span>
                 <Icon name="search" />
               </div>
@@ -250,7 +244,7 @@ export default function AdidasListMock() {
         {/* title row */}
         <div className="mt-6 flex items-start justify-between gap-6">
           <div className="max-w-3xl">
-            <h1 className="text-[44px] font-black uppercase leading-[0.95] tracking-tight md:text-[56px]">
+            <h1 className="text-[44px] font-black uppercase leading-[0.95] tracking-tight md:text-[56px] font-original">
               "YOU GOT THIS"
             </h1>
             <p className="mt-4 text-[14px] leading-relaxed text-black/75">
@@ -305,8 +299,8 @@ export default function AdidasListMock() {
       </section>
 
       {/* Right-side feedback tab (optional) */}
-      <div className="fixed right-0 top-1/2 hidden -translate-y-1/2 md:block">
-        <div className="rotate-180 [writing-mode:vertical-rl] border border-black/20 bg-white px-2 py-3 text-[12px] font-semibold tracking-wide text-black/70">
+      <div className="fixed right-0 top-1/2 hidden -translate-y-1/2 md:block font-original ">
+        <div className="rotate-180 [writing-mode:vertical-rl] border border-black/20 bg-white px-7 py-3 text-[18px]  tracking-wide text-black/70">
           FEEDBACK
         </div>
       </div>

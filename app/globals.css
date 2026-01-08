@@ -9,6 +9,10 @@
   font-family: var(--font-banner);
 }
 
+.font-original{
+  font-family: var(--font-original);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

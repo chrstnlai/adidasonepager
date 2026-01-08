@@ -6,3 +6,9 @@ export const bannerFont = localFont({
   variable: "--font-banner",
   display: "swap",
 });
+
+export const originalFont = localFont({
+  src: "../app/fonts/adineuePROBold.ttf",
+  variable: "--font-original",
+  display: "swap",
+});
