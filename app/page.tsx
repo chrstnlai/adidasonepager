@@ -139,38 +139,48 @@ export default function AdidasListMock() {
       <header className="border-b border-black/10 ">
         <div className="w-full px-10">
           {/* utility row */}
-          <div className="flex pt-3 items-center justify-end gap-5 text-[12px] text-black/60">
-            <a className="hover:text-black" href="#">
-              cmlai@usc.edu
-            </a>
+          <div className="flex flex-nowrap items-center justify-end gap-3 sm:gap-5 text-[10px] sm:text-[12px] text-black/60 whitespace-nowrap">
             <a
               className="hover:text-black"
               href="https://www.linkedin.com/in/chrstnlai"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Linkedin
+              LinkedIn
             </a>
-            <a className="hover:text-black" href="#">
-              510-501-9938
-            </a>
+
             <a
               className="hover:text-black"
               href="https://www.christinemlai.com/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Portfolio
+            </a>
+
+            <a className="hover:text-black" href="mailto:cmlai@usc.edu">
+              cmlai@usc.edu
+            </a>
+
+            <a className="hover:text-black" href="tel:+15105019938">
+              510-501-9938
             </a>
           </div>
 
           {/* main row */}
           <div className="flex h-12 items-center justify-between">
             {/* left logo placeholder */}
-            <Link href="/" className="flex items-center gap-2">
-              <Image
-                src="/689347.jpg"
-                alt="Brand logo"
-                width={150}
-                height={150}
-                className="object-contain"
-              />
+            <Link href="/" className="flex items-center">
+              <div className="w-[110px] sm:w-[150px]">
+                <Image
+                  src="/689347.jpg"
+                  alt="Brand logo"
+                  width={300}
+                  height={120}
+                  className="object-contain w-full h-auto"
+                  priority
+                />
+              </div>
             </Link>
 
             {/* nav */}
@@ -248,23 +258,25 @@ export default function AdidasListMock() {
 
           {/* Left stacked boxes */}
           <div className="absolute inset-0">
-            <div className="mx-auto flex h-full max-w-[1200px] items-end px-2 pb-10 md:pb-12">
-              <div className="w-full max-w-[520px] space-y-2">
-                <div className="inline-block bg-white/85 px-3 py-2 border border-black text-[18px] font-banner font-extrabold uppercase tracking-wide">
+            <div className="mx-auto flex h-full max-w-[1200px] items-end px-2 pb-6 sm:pb-10 md:pb-12">
+              <div className="w-full max-w-[420px] sm:max-w-[520px] space-y-1.5 sm:space-y-2">
+                <div className="inline-block bg-white/85 px-2 py-1.5 sm:px-3 sm:py-2 border border-black text-[14px] sm:text-[18px] font-banner font-extrabold uppercase tracking-wide">
                   CHRISTINE LAI
                 </div>
-                <div className="inline-block bg-white/85 px-3 py-2 text-[14px] leading-snug text-black/80 font-title">
+
+                <div className="inline-block bg-white/85 px-2 py-1.5 sm:px-3 sm:py-2 text-[12px] sm:text-[14px] leading-snug text-black/80 font-title">
                   Multi-disciplinary Creative, Fashion Designer, Business-Owner,
                   and Engineer
                 </div>
-                <div className="inline-block bg-white/85 px-3 py-2 text-[14px] leading-snug text-black/80 font-title">
+
+                <div className="inline-block bg-white/85 px-2 py-1.5 sm:px-3 sm:py-2 text-[12px] sm:text-[14px] leading-snug text-black/80 font-title">
                   Computer Science, Business, and Human-Centered Design @ USC
-                  '27
+                  ’27
                 </div>
 
-                <div className="pt-2">
-                  <button className="font-banner inline-flex items-center border border-black gap-2 bg-white/90 px-3 py-2 text-[14px] font-semibold hover:bg-white">
-                    Read what “You Got This” means to her{" "}
+                <div className="pt-1 sm:pt-2">
+                  <button className="font-banner inline-flex items-center border border-black gap-2 bg-white/90 px-2 py-1.5 sm:px-3 sm:py-2 text-[12px] sm:text-[14px] font-semibold hover:bg-white">
+                    Read what “You Got This” means to her
                     <span aria-hidden>→</span>
                   </button>
                 </div>
@@ -272,6 +284,222 @@ export default function AdidasListMock() {
             </div>
           </div>
         </div>
+      </section>
+      {/* SHOP BY SURFACE style section */}
+      <section className="mx-auto max-w-[1200px] px-4 pt-14 pb-10">
+        <h2 className=" text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
+          THE FOUNDATION
+        </h2>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {[
+            {
+              title: "PAVEMENT",
+              src: "/family1.svg",
+            },
+            {
+              title: "TRAIL",
+              src: "/family2.svg",
+            },
+            {
+              title: "TRACK",
+              src: "/family3.svg",
+              caption: "wore this Adidas shirt religiously #warriorsforever ",
+              // no caption here → totally fine
+            },
+          ].map((card) => (
+            <a
+              key={card.title}
+              className="group relative block overflow-hidden "
+            >
+              <div className="relative h-[250px] sm:h-[360px] md:h-[460px] w-full">
+                <Image
+                  src={card.src}
+                  alt={card.title}
+                  fill
+                  className="object-cover transition-transform duration-300 "
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+
+              {/* bottom-left label (kept strong, adidas-style) */}
+
+              {/* optional caption */}
+              {card.caption && (
+                <div className="px-1  text-[11px] leading-relaxed text-black/70 font-title">
+                  {card.caption}
+                </div>
+              )}
+            </a>
+          ))}
+        </div>
+
+        <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
+          My parents defined what "You Got This" means to me. Immigrants of
+          theur Vietnam war, they made it to Oakland, CA to pursure their
+          dreams.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-[1200px] px-4 pt-14 pb-10">
+        <h2 className=" text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
+          THE APPLICATION
+        </h2>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {[
+            {
+              title: "PAVEMENT",
+              src: "/family1.svg",
+            },
+            {
+              title: "TRAIL",
+              src: "/family2.svg",
+            },
+            {
+              title: "TRACK",
+              src: "/family3.svg",
+              caption: "wore this Adidas shirt religiously #warriorsforever ",
+              // no caption here → totally fine
+            },
+          ].map((card) => (
+            <a
+              key={card.title}
+              className="group relative block overflow-hidden "
+            >
+              <div className="relative h-[250px] sm:h-[360px] md:h-[460px] w-full">
+                <Image
+                  src={card.src}
+                  alt={card.title}
+                  fill
+                  className="object-cover transition-transform duration-300 "
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+
+              {/* bottom-left label (kept strong, adidas-style) */}
+
+              {/* optional caption */}
+              {card.caption && (
+                <div className="px-1  text-[11px] leading-relaxed text-black/70 font-title">
+                  {card.caption}
+                </div>
+              )}
+            </a>
+          ))}
+        </div>
+
+        <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
+          "You Got this" means chasing my dreams and putting myself in
+          posititons where I'm growing. It means shooting for the stars and
+          starting my dream fashion brand with my best friend. Going outside of
+          the box and making it the most innovative fashion brand.It means going
+          outside of my comfort zone, taking leadership positions
+        </p>
+      </section>
+      <section className="mx-auto max-w-[1200px] px-4 pt-14 pb-10">
+        <h2 className=" text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
+          PASSING IT ON
+        </h2>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {[
+            {
+              title: "PAVEMENT",
+              src: "/family1.svg",
+            },
+            {
+              title: "TRAIL",
+              src: "/family2.svg",
+            },
+            {
+              title: "TRACK",
+              src: "/family3.svg",
+              caption: "wore this Adidas shirt religiously #warriorsforever ",
+              // no caption here → totally fine
+            },
+          ].map((card) => (
+            <a
+              key={card.title}
+              className="group relative block overflow-hidden "
+            >
+              <div className="relative h-[250px] sm:h-[360px] md:h-[460px] w-full">
+                <Image
+                  src={card.src}
+                  alt={card.title}
+                  fill
+                  className="object-cover transition-transform duration-300 "
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+
+              {/* bottom-left label (kept strong, adidas-style) */}
+
+              {/* optional caption */}
+              {card.caption && (
+                <div className="px-1  text-[11px] leading-relaxed text-black/70 font-title">
+                  {card.caption}
+                </div>
+              )}
+            </a>
+          ))}
+        </div>
+
+        <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
+          "YOU GOT THIS" is a phrase I choose to say to others. As a
+          mission-driven creative, everything I do inside and out of career
+          revolves around making a change in my community.
+        </p>
+      </section>
+      <section className="mx-auto max-w-[1200px] px-4 pt-14 pb-10">
+        <h2 className=" text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
+          WHY ADIDAS?
+        </h2>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {[
+            {
+              title: "PAVEMENT",
+              src: "/family1.svg",
+            },
+            {
+              title: "TRAIL",
+              src: "/family2.svg",
+            },
+            {
+              title: "TRACK",
+              src: "/family3.svg",
+              caption: "wore this Adidas shirt religiously #warriorsforever ",
+              // no caption here → totally fine
+            },
+          ].map((card) => (
+            <a
+              key={card.title}
+              className="group relative block overflow-hidden "
+            >
+              <div className="relative h-[250px] sm:h-[360px] md:h-[460px] w-full">
+                <Image
+                  src={card.src}
+                  alt={card.title}
+                  fill
+                  className="object-cover transition-transform duration-300 "
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+
+              {/* bottom-left label (kept strong, adidas-style) */}
+
+              {/* optional caption */}
+              {card.caption && (
+                <div className="px-1  text-[11px] leading-relaxed text-black/70 font-title">
+                  {card.caption}
+                </div>
+              )}
+            </a>
+          ))}
+        </div>
+
+        <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
+          Adidas has had my back since day 1. I believe I am a great candidate
+          for the Digital Visual Merchandising Role because of my
+          multi-disciplinary skills in design and business
+        </p>
       </section>
 
       {/* Page content */}
