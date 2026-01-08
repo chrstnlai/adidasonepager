@@ -65,7 +65,8 @@ export default function PromoBannerDrawer() {
             </h3>
             <p className="mt-4 max-w-[520px] font-title text-[14px] leading-relaxed text-black/80">
               Thank you for your time and considering me for the Adidas DVM
-              Internship Role
+              Internship role. Feel free to contact me for any additional
+              questions or information. cmlai@usc.edu
             </p>
             {/* <a className="mt-8 inline-block text-[16px] font-extrabold uppercase underline underline-offset-4">
               FROM THEM

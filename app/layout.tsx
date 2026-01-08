@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "CHRISTINE LAI",
   description: "YOU GOT THIS",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
