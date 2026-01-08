@@ -130,7 +130,7 @@ export default function AdidasListMock() {
     };
   }, [promoOpen]);
   return (
-    <main className="min-h-screen bg-white text-black">
+    <main className="min-h-screen bg-white text-black pt-10">
       <PromoBannerDrawer />
       {/* Top promo bar */}
       {/* Top promo bar */}
