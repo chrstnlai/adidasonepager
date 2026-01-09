@@ -501,8 +501,8 @@ export default function AdidasListMock() {
           through digital spaces and interact with a brand. Throughout my life,
           Adidas has been there —on my feet and in my everyday wear—as I chased
           new goals and stepped into unfamiliar spaces. That constant presence
-          has made the brand feel deeply personal. I see this role as an
-          opportunity to contribute meaningfully while continuing to grow my
+          has made the brand feel incredibly personal to me. I see this role as
+          an opportunity to contribute meaningfully while continuing to grow my
           abilities within a global brand that consistently champions innovation
           and self-belief.
         </p>
