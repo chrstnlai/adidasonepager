@@ -243,19 +243,19 @@ export default function AdidasListMock() {
                 className="hover:underline underline-offset-4 font-banner"
                 href="#"
               >
-                FOUNDATION
+                THE FOUNDATION
               </a>
               <a
                 className="hover:underline underline-offset-4 font-banner"
                 href="#"
               >
-                BUILT
+                INNER DRIVE
               </a>
               <a
                 className="hover:underline underline-offset-4 font-banner"
                 href="#"
               >
-                GIVING
+                PASS IT ON
               </a>
               <a
                 className="hover:underline underline-offset-4 font-banner"
@@ -319,8 +319,7 @@ export default function AdidasListMock() {
                 </div>
 
                 <div className="inline-block bg-white/85 px-2 py-1.5 sm:px-3 sm:py-2 text-[12px] sm:text-[14px] leading-snug text-black/80 font-title">
-                  Multi-disciplinary Creative, Fashion Designer, Business-Owner,
-                  and Engineer
+                  Multi-disciplinary Creative, Fashion Designer, and Founder
                 </div>
 
                 <div className="inline-block bg-white/85 px-2 py-1.5 sm:px-3 sm:py-2 text-[12px] sm:text-[14px] leading-snug text-black/80 font-title">
@@ -398,7 +397,7 @@ export default function AdidasListMock() {
       <section className="bg-black/[0.10]">
         <div className="mx-auto max-w-[1200px] px-4 py-14">
           <h2 className="text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
-            THE APPLICATION
+            INNER DRIVE
           </h2>
           <p className="mt-1 text-[16px] sm:text-[18px] text-black/70 font-title">
             How I tell myself "You Got This"
@@ -436,7 +435,7 @@ export default function AdidasListMock() {
         {/* Header row */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-12 md:items-start">
           <h2 className="md:col-span-6 text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
-            IN PRACTICE
+            PASS IT ON
           </h2>
 
           <p className="md:col-span-6 max-w-xl text-[16px] sm:text-[18px] leading-relaxed text-black/70 font-title">
