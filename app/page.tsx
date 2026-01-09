@@ -550,6 +550,8 @@ export default function AdidasListMock() {
         </div>
       </section>
 
+      {/* / */}
+
       <section id="adidas" className="mx-auto max-w-[1200px] px-4 pt-14 pb-10">
         <h2 className=" text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
           WHY ADIDAS?
