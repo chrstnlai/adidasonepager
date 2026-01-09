@@ -412,10 +412,13 @@ export default function AdidasListMock() {
                   <br />
                   <br />
                   From coding and social media marketing to photography, graphic
-                  design, and fashion design, building this brand taught me that
-                  success is something you practice by showing up and putting in
-                  the effort one day at a time, even when the results don’t show
-                  up right away.
+                  design, and fashion design, I found myself constantly stepping
+                  into unfamiliar territory, learning by doing and pushing past
+                  challenges as they came. <br />
+                  <br />
+                  Building this brand taught me that success is something you
+                  practice by showing up and putting in the effort one day at a
+                  time, even when the results don&rsquo;t show up right away.
                 </>
               }
               images={[
