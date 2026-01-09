@@ -8,39 +8,6 @@ import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import PromoBannerDrawer from "./PromoBannerDrawer";
 
-const products = [
-  {
-    id: 1,
-    name: "Samba OG Shoes",
-    price: "$100",
-    category: "Originals",
-    colors: "44 colors",
-    badge: "Best seller",
-  },
-  {
-    id: 2,
-    name: "Adizero EVO SL Shoes",
-    price: "$150",
-    category: "Men's Running",
-    colors: "15 colors",
-    badge: "New",
-  },
-  {
-    id: 3,
-    name: "Samba OG Shoes",
-    price: "$110",
-    category: "Originals",
-    colors: "44 colors",
-  },
-  {
-    id: 4,
-    name: "Samba OG",
-    price: "$110",
-    category: "Originals",
-    colors: "44 colors",
-  },
-];
-
 function Icon({ name }: { name: "search" | "user" | "heart" | "bag" }) {
   // tiny inline icons so you don’t need any icon library
   const common = "stroke-black/80";
@@ -393,19 +360,20 @@ export default function AdidasListMock() {
           persistence, and time.
           <br />
           <br />
-          From my mom's 3-day beef pho recipe to my dad's college journey,
-          spending nearly 8 years to earn his Bachelor’s degree while he worked
-          to bring his family over from Vietnam to America, I’ve learned about
-          the beauty of dedicating time to see a gratifying end result.
+          From my mom&rsquo;s 3-day beef pho recipe to my dad&rsquo;s college
+          journey, spending nearly 8 years to earn his Bachelor&rsquo;s degree
+          while he worked to bring his family over from Vietnam to America,
+          I&rsquo;ve learned about the beauty of dedicating time to see a
+          gratifying end result.
           <br /> <br />
-          My mom’s pho inspires me to marinate on an idea for a few days instead
-          of making a quick decision resulting in a bad solution, as she always
-          says “the longer pho broth cooks, the better it is.”
-          <br /> <br /> My dad’s endurance teaches me to work with the utmost
-          dedication and passion, as he didn’t let the 8 years and hours of
-          working side jobs stop him from earning the Economics degree he always
-          dreamed of. I honor this legacy of patience in my life as I now work
-          to achieve my own goals.
+          My mom&rsquo;s pho inspires me to marinate on an idea for a few days
+          instead of making a quick decision resulting in a bad solution, as she
+          always says “the longer pho broth cooks, the better it is.”
+          <br /> <br /> My dad&rsquo;s endurance teaches me to work with the
+          utmost dedication and passion, as he didn&rsquo;t let the 8 years and
+          hours of working side jobs stop him from earning the Economics degree
+          he always dreamed of. I honor this legacy of patience in my life as I
+          now work to achieve my own goals.
           <br /> <br /> When challenges arise, my parents have always told me —
           and always will — “You got this.” or for them "加油"
         </p>
@@ -424,7 +392,7 @@ export default function AdidasListMock() {
           <div className="mt-12 space-y-14">
             <StoryRow
               title="STARTING MY FASHION BRAND, AC unit"
-              body=" Shooting for the stars and starting my fashion brand"
+              body=" Starting a fashion brand with my best friend, Ally, meant betting on myself. “You got this” is what keeps me pushing past what’s expected — through long nights of designing, learning how to run a business, selling pieces, and picking up new skills along the way. From coding and social media marketing to photography, graphic design, and fashion design, building this brand taught me that belief is something you practice every day by showing up "
               images={[
                 { src: "/1.svg" },
                 { src: "/acshoes.svg" },
@@ -436,7 +404,7 @@ export default function AdidasListMock() {
             <StoryRow
               flip
               title="LEADERSHIP ON CAMPUS"
-              body="Doing it scared. "
+              body="Break to Make was about creating space for women in hardware at USC and passing belief forward. I led the planning of an entire event, grew my public speaking skills, and took initiative to build something for my community. “You got this” wasn’t just something I told myself — it was something I shared with other women at USC, reminding them that they belonged and got this too . "
               images={[
                 { src: "/DSC_0655.webp" },
                 { src: "/DSC_0763.jpg" },
@@ -457,7 +425,7 @@ export default function AdidasListMock() {
           </h2>
 
           <p className="md:col-span-6 max-w-xl text-[16px] sm:text-[18px] leading-relaxed text-black/70 font-title">
-            Every way I extend "You Got This" in my career
+            The ways I extend "You Got This" in my career
           </p>
         </div>
 
@@ -468,53 +436,52 @@ export default function AdidasListMock() {
               label: "Visual Merchandising Intern @ Fenty",
               title: "Disrupting the Beauty Industry",
               src: "/fenty.png",
-              cta: "Saying you got this ",
+              cta: "At Fenty, visual merchandising became a way to say “you got this” without words.  Through 3D design and spatial storytelling, I helped create environments that reflect confidence, inclusivity, and self-belief—values at the core of a brand redefining beauty. ",
             },
             {
               label: "Design Intern @ Kode with Klossy ",
               title: "CLOSING THE GENDER GAP IN TECH",
               src: "/kwkteam 1.svg",
-              cta: "SEE THE WORK",
+              cta: "At Kode With Klossy, saying “you got this” meant helping women see that they belonged in tech. Through curriculum design, I worked on learning experiences that broke down intimidating concepts and replaced doubt with confidence. Watching students go from uncertainty to ownership reminded me that education isn’t just about teaching skills—it’s about creating spaces where people feel empowered to take up space.",
             },
             {
               label: "Coding Teacher @ Norwoord Street Elementary",
               title: "VOLUNTEERING",
               src: "/advol.jpeg",
-              cta: "SEE THE WORK",
+              cta: "Volunteering with Norwood, saying “you got this” meant helping elementary school students believe they were capable of solving hard problems. Through teaching them how to code, I introduced technology as a tool for curiosity, creativity, and confidence. Watching students light up when something finally clicked showed me how early encouragement can shape how young people see their future and their place in it.",
             },
           ].map((card) => (
-            <div
-              key={card.title}
-              className="group relative h-[500px] w-full overflow-hidden"
-            >
-              {/* Image */}
-              <Image
-                src={card.src}
-                alt={card.title}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
+            <div key={card.title} className="group w-full">
+              {/* IMAGE CARD */}
+              <div className="relative h-[420px] w-full overflow-hidden">
+                <Image
+                  src={card.src}
+                  alt={card.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
 
-              {/* Dark gradient for text legibility */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                {/* Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-              {/* Label (top-left) */}
-              <div className="absolute font-banner left-4 top-4 bg-black px-3 py-1 text-[12px] font-bold uppercase tracking-wide text-white">
-                {card.label}
-              </div>
+                {/* Label */}
+                <div className="absolute left-4 top-4 bg-black px-3 py-1 text-[12px] font-banner font-bold uppercase tracking-wide text-white">
+                  {card.label}
+                </div>
 
-              {/* Bottom text */}
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <h3 className="text-[22px] font-banner font-extrabold uppercase leading-tight text-white">
-                  {card.title}
-                </h3>
-
-                <div className="mt-3 font-title inline-flex items-center gap-2 text-[12px] font-bold uppercase tracking-wide text-white">
-                  {card.cta}
-                  <span className="inline-block h-[2px] w-6 bg-white" />
+                {/* Title */}
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-[22px] font-banner font-extrabold uppercase leading-tight text-white">
+                    {card.title}
+                  </h3>
                 </div>
               </div>
+
+              {/* CTA BELOW IMAGE */}
+              <p className="mt-4 text-[14px] leading-relaxed text-black/70 font-title">
+                {card.cta}
+              </p>
             </div>
           ))}
         </div>
@@ -526,9 +493,18 @@ export default function AdidasListMock() {
         </h2>
 
         <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
-          Adidas has had my back since day 1. I believe I am a great candidate
-          for the Digital Visual Merchandising Role because of my
-          multi-disciplinary skills in design and business
+          I&rsquo;m excited about Digital Visual Merchandising at Adidas because
+          it brings together everything I&rsquo;m passionate about: experience
+          design, fashion, and technology. My interdisplinary background in
+          business from owning a fashion brand, web development, and visual
+          merchandising allows me to think holistically about how people move
+          through digital spaces and interact with a brand. Throughout my life,
+          Adidas has been there —on my feet and in my everyday wear—as I chased
+          new goals and stepped into unfamiliar spaces. That constant presence
+          has made the brand feel deeply personal. I see this role as an
+          opportunity to contribute meaningfully while continuing to grow my
+          abilities within a global brand that consistently champions innovation
+          and self-belief.
         </p>
       </section>
 
