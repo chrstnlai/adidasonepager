@@ -432,7 +432,19 @@ export default function AdidasListMock() {
             <StoryRow
               flip
               title="LEADERSHIP ON CAMPUS"
-              body="I helped lead USC's first all-womens hack-a-thon, Break to Make, taking a leap into leadership beyond my comfort zone. “You got this” wasn't just something I told myself,  it was something I shared with other women at USC, reminding them that they belonged in tech and 'got this' too. The event created space for women in hardware at USC and passing confidence forward. I led and organized the event, grew in my public speaking and leadership skills, and took initiative to build something for my USC community.  "
+              body={
+                <>
+                  I helped lead USC&rsquo;s first all-womens hack-a-thon, Break
+                  to Make, taking a leap into leadership beyond my comfort zone.
+                  “You got this” wasn't just something I told myself, it was
+                  something I shared with other women at USC, reminding them
+                  that they belonged in tech and "got this" too. The event
+                  created space for women in hardware at USC and passing
+                  confidence forward. I led and organized the event, grew in my
+                  public speaking and leadership skills, and took initiative to
+                  build something for my USC community. "
+                </>
+              }
               images={[
                 { src: "/DSC_0655.webp" },
                 { src: "/DSC_0763.jpg" },
