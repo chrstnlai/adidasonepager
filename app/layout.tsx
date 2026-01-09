@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CHRISTINE LAI",
+  title: "CHRISTINE LAI- YOU GOT THIS",
   description: "YOU GOT THIS",
   icons: {
     icon: "/favicon.ico",
