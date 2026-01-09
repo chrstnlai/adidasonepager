@@ -502,7 +502,7 @@ export default function AdidasListMock() {
               </div>
 
               {/* CTA BELOW IMAGE */}
-              <p className="mt-4 text-[14px] leading-relaxed text-black/70 font-title">
+              <p className="mt-4 text-[16px] leading-relaxed text-black/70 font-title">
                 {card.cta}
               </p>
             </div>
