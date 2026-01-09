@@ -557,8 +557,8 @@ export default function AdidasListMock() {
 
         <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
           Digital Visual Merchandising at Adidas brings together everything
-          Isquo&r;m passionate about: experience design, fashion, and
-          technology. My interdisplinary background from startin a fashion
+          I&rsquo;m passionate about: experience design, fashion, and
+          technology. My interdisplinary background from starting a fashion
           brand, web development, and visual merchandising allows me to think
           holistically about how people move through digital spaces and interact
           with a brand.
