@@ -385,7 +385,7 @@ export default function AdidasListMock() {
           now work to achieve my own goals @ USC and in my career.
           <br /> <br /> When challenges arise, my parents have always been
           there—reminding me, time and time again, “You got this,” or, in their
-          words, 加油.
+          words, 加油 Jiā yóu.
         </p>
       </section>
 
