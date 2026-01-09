@@ -446,7 +446,7 @@ export default function AdidasListMock() {
             },
             {
               label: "Coding Teacher @ Norwoord Street Elementary",
-              title: "VOLUNTEERING",
+              title: "TEACHING STUDENTS HOW TO CODE",
               src: "/advol.jpeg",
               cta: "Volunteering with Norwood, saying “you got this” meant helping elementary school students believe they were capable of solving hard problems. Through teaching them how to code, I introduced technology as a tool for curiosity, creativity, and confidence. Watching students light up when something finally clicked showed me how early encouragement can shape how young people see their future and their place in it.",
             },
