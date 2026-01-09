@@ -356,8 +356,8 @@ export default function AdidasListMock() {
 
         <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
           My parents defined what “You Got This” means to me. As immigrants of
-          the Vietnam War, they showed me that belief is built through patience,
-          persistence, and time.
+          the Vietnam War, they showed me that belief is ultimately built
+          through patience and time
           <br />
           <br />
           From my mom&rsquo;s 3-day beef pho recipe to my dad&rsquo;s college
