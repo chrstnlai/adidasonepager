@@ -444,7 +444,7 @@ export default function AdidasListMock() {
                   The event created space for women in hardware at USC and
                   passing confidence forward. I led and organized the event,
                   grew in my public speaking and leadership skills, and took
-                  initiative to build something for my USC community. "
+                  initiative to build something for my USC community.
                 </>
               }
               images={[
