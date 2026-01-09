@@ -450,16 +450,19 @@ export default function AdidasListMock() {
               label: "Visual Merchandising Intern @ Fenty",
               title: "Disrupting the Beauty Industry",
               src: "/fenty.png",
+              cta: "Saying you got this ",
             },
             {
               label: "Design Intern @ Kode with Klossy ",
               title: "CLOSING THE GENDER GAP IN TECH",
               src: "/kwkteam 1.svg",
+              cta: "SEE THE WORK",
             },
             {
               label: "Coding Teacher @ Norwoord Street Elementary",
               title: "VOLUNTEERING",
               src: "/advol.jpeg",
+              cta: "SEE THE WORK",
             },
           ].map((card) => (
             <div
@@ -479,18 +482,18 @@ export default function AdidasListMock() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
               {/* Label (top-left) */}
-              <div className="absolute left-4 top-4 bg-black px-3 py-1 text-[12px] font-bold uppercase tracking-wide text-white">
+              <div className="absolute font-banner left-4 top-4 bg-black px-3 py-1 text-[12px] font-bold uppercase tracking-wide text-white">
                 {card.label}
               </div>
 
               {/* Bottom text */}
               <div className="absolute bottom-0 left-0 right-0 p-4">
-                <h3 className="text-[22px] font-extrabold uppercase leading-tight text-white">
+                <h3 className="text-[22px] font-banner font-extrabold uppercase leading-tight text-white">
                   {card.title}
                 </h3>
 
-                <div className="mt-3 inline-flex items-center gap-2 text-[12px] font-bold uppercase tracking-wide text-white">
-                  READ MORE
+                <div className="mt-3 font-title inline-flex items-center gap-2 text-[12px] font-bold uppercase tracking-wide text-white">
+                  {card.cta}
                   <span className="inline-block h-[2px] w-6 bg-white" />
                 </div>
               </div>
@@ -503,46 +506,6 @@ export default function AdidasListMock() {
         <h2 className=" text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
           WHY ADIDAS?
         </h2>
-        {/* <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {[
-            {
-              title: "PAVEMENT",
-              src: "/family1.svg",
-            },
-            {
-              title: "TRAIL",
-              src: "/family2.svg",
-            },
-            {
-              title: "TRACK",
-              src: "/family3.svg",
-              caption: "wore this Adidas shirt religiously #warriorsforever ",
-              // no caption here → totally fine
-            },
-          ].map((card) => (
-            <a
-              key={card.title}
-              className="group relative block overflow-hidden "
-            >
-              <div className="relative h-[250px] sm:h-[360px] md:h-[460px] w-full">
-                <Image
-                  src={card.src}
-                  alt={card.title}
-                  fill
-                  className="object-cover transition-transform duration-300 "
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
-
-            
-              {card.caption && (
-                <div className="px-1  text-[11px] leading-relaxed text-black/70 font-title">
-                  {card.caption}
-                </div>
-              )}
-            </a>
-          ))}
-        </div> */}
 
         <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
           Adidas has had my back since day 1. I believe I am a great candidate
