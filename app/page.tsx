@@ -349,6 +349,7 @@ export default function AdidasListMock() {
             {
               title: "PAVEMENT",
               src: "/family1.svg",
+              caption: "adidas fan est. 2016 ",
             },
             {
               title: "TRAIL",
@@ -439,9 +440,7 @@ export default function AdidasListMock() {
           </h2>
 
           <p className="md:col-span-6 max-w-xl text-[16px] sm:text-[18px] leading-relaxed text-black/70 font-title">
-            From rethinking materials and developing ways to reduce our
-            footprint, to working alongside communities to drive meaningful
-            impact — this is how I turn ideas into action.
+            Every way I extend "You Got This" in my career
           </p>
         </div>
 
@@ -560,7 +559,7 @@ export default function AdidasListMock() {
       <button
         type="button"
         onClick={() => setFeedbackOpen(true)}
-        className="fixed right-0 top-1/2 z-40 hidden -translate-y-1/2 md:block"
+        className="fixed right-0 top-1/2 z-80 hidden -translate-y-1/2 md:block"
         aria-label="Open feedback"
       >
         <div className="rotate-180 [writing-mode:vertical-rl] font-original border border-black/20 bg-white px-7 py-3 text-[18px] tracking-wide text-black/70 hover:bg-black hover:text-white">
@@ -570,7 +569,7 @@ export default function AdidasListMock() {
 
       {/* Feedback drawer (sibling, NOT inside the button) */}
       <div
-        className={`fixed inset-0 z-50 ${
+        className={`fixed inset-0 z-80 ${
           feedbackOpen ? "pointer-events-auto" : "pointer-events-none"
         }`}
         aria-hidden={!feedbackOpen}
