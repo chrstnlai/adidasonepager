@@ -374,9 +374,9 @@ export default function AdidasListMock() {
           I&rsquo;ve learned about the beauty of dedicating time to see the
           results.
           <br /> <br />
-          My mom&rsquo;s pho inspires me to marinate on an idea for a few days
-          instead of making quick decisions resulting in bad solutions. “The
-          longer pho broth cooks, the better it is.”, she always says.
+          My mom&rsquo;s pho reminds me to marinate on ideas, trusting time and
+          dedication to deepen the outcome. “The longer pho broth cooks, the
+          better it is.”, she always says.
           <br /> <br /> My dad&rsquo;s endurance teaches me to work with the
           utmost dedication and passion, as he didn&rsquo;t let the 8 years and
           hours of working side jobs stop him from earning the Economics degree
