@@ -357,25 +357,24 @@ export default function AdidasListMock() {
         <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
           My parents defined what “You Got This” means to me. As immigrants of
           the Vietnam War, they showed me that belief is ultimately built
-          through patience and time
+          through patience and time.
           <br />
           <br />
           From my mom&rsquo;s 3-day beef pho recipe to my dad&rsquo;s college
           journey, spending nearly 8 years to earn his Bachelor&rsquo;s degree
           while he worked to bring his family over from Vietnam to America,
-          I&rsquo;ve learned about the beauty of dedicating time to see a
-          gratifying end result.
+          I&rsquo;ve learned about the beauty of dedicating time to the results.
           <br /> <br />
           My mom&rsquo;s pho inspires me to marinate on an idea for a few days
-          instead of making a quick decision resulting in a bad solution, as she
-          always says “the longer pho broth cooks, the better it is.”
+          instead of making quick decisions resulting in bad solutions. “The
+          longer pho broth cooks, the better it is.”, she always says.
           <br /> <br /> My dad&rsquo;s endurance teaches me to work with the
           utmost dedication and passion, as he didn&rsquo;t let the 8 years and
           hours of working side jobs stop him from earning the Economics degree
           he always dreamed of. I honor this legacy of patience in my life as I
           now work to achieve my own goals.
-          <br /> <br /> When challenges arise, my parents have always told me,
-          and always will, “You got this.” or for them "加油"
+          <br /> <br /> When challenges arise, my parents have always , and
+          always will tell me, “You got this.” or for them "加油"
         </p>
       </section>
 
