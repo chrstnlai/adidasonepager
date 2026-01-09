@@ -374,8 +374,8 @@ export default function AdidasListMock() {
           hours of working side jobs stop him from earning the Economics degree
           he always dreamed of. I honor this legacy of patience in my life as I
           now work to achieve my own goals.
-          <br /> <br /> When challenges arise, my parents have always told me —
-          and always will — “You got this.” or for them "加油"
+          <br /> <br /> When challenges arise, my parents have always told me,
+          and always will, “You got this.” or for them "加油"
         </p>
       </section>
 
@@ -392,7 +392,7 @@ export default function AdidasListMock() {
           <div className="mt-12 space-y-14">
             <StoryRow
               title="STARTING MY FASHION BRAND, AC unit"
-              body=" Starting a fashion brand with my best friend, Ally, meant betting on myself. “You got this” is what keeps me pushing past what’s expected — through long nights of designing, learning how to run a business, selling pieces, and picking up new skills along the way. From coding and social media marketing to photography, graphic design, and fashion design, building this brand taught me that belief is something you practice every day by showing up "
+              body=" Starting a fashion brand with my best friend, Ally, meant betting on myself. “You got this” is what keeps me pushing past what’s expected,  through long nights of designing, learning how to run a business, selling pieces, and picking up new skills along the way. From coding and social media marketing to photography, graphic design, and fashion design, building this brand taught me that belief is something you practice every day by showing up "
               images={[
                 { src: "/1.svg" },
                 { src: "/acshoes.svg" },
@@ -404,7 +404,7 @@ export default function AdidasListMock() {
             <StoryRow
               flip
               title="LEADERSHIP ON CAMPUS"
-              body="Break to Make was about creating space for women in hardware at USC and passing belief forward. I led the planning of an entire event, grew my public speaking skills, and took initiative to build something for my community. “You got this” wasn’t just something I told myself — it was something I shared with other women at USC, reminding them that they belonged and got this too . "
+              body="Break to Make was about creating space for women in hardware at USC and passing belief forward. I led the planning of an entire event, grew my public speaking skills, and took initiative to build something for my community. “You got this” wasn’t just something I told myself,  it was something I shared with other women at USC, reminding them that they belonged and got this too . "
               images={[
                 { src: "/DSC_0655.webp" },
                 { src: "/DSC_0763.jpg" },
