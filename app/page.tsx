@@ -382,10 +382,11 @@ export default function AdidasListMock() {
           utmost dedication and passion, as he didn&rsquo;t let the 8 years and
           hours of working side jobs stop him from earning the Economics degree
           he always dreamed of. I honor this legacy of patience in my life as I
-          now work to achieve my own goals @ USC and in my career.
-          <br /> <br /> When challenges arise, my parents have always been
-          there—reminding me, time and time again, “You got this,” or, in their
-          words, 加油 Jiā yóu + Cố lên
+          now work to achieve my own goals @ USC and in my career, while my
+          parents cheer me on along the way.
+          <br /> <br /> When challenges arise in my life, my parents have always
+          been there—reminding me, time and time again, “You got this,” or, in
+          their words, 加油 Jiā yóu + Cố lên
         </p>
       </section>
 
