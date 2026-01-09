@@ -362,9 +362,10 @@ export default function AdidasListMock() {
         </div>
 
         <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
-          My parents defined what “You Got This” means to me. As immigrants who
-          fled the Vietnam War to pursue their dreams in America, they showed me
-          that belief is ultimately built through patience and time.
+          My parents defined what “You Got This” means to me. As
+          Chinese-Vietnamese immigrants who fled the Vietnam War to pursue their
+          dreams in America, they showed me that belief is ultimately built
+          through patience and time.
           <br />
           <br />
           From my mom&rsquo;s 3-day pho recipe to my dad&rsquo;s college
@@ -400,7 +401,7 @@ export default function AdidasListMock() {
           <div className="mt-12 space-y-14">
             <StoryRow
               title="STARTING MY FASHION BRAND, AC unit"
-              body=" Starting a fashion brand with my best friend meant betting on myself and our business. “You got this” is what keeps me pushing past what’s expected,  through long nights of designing, learning how to run a business, selling pieces, and picking up new skills along the way. From coding and social media marketing to photography, graphic design, and fashion design, building this brand taught me that belief is something you practice by showing up and growing one day at a time "
+              body=" Starting a fashion brand with my best friend meant betting on myself and our business. “You got this” is what keeps me pushing past what’s expected,  through long nights of designing, learning how to run a business, selling pieces, and picking up new skills along the way. From coding and social media marketing to photography, graphic design, and fashion design, building this brand taught me that confidence is something you practice by showing up and growing one day at a time.  "
               images={[
                 { src: "/1.svg" },
                 { src: "/acshoes.svg" },
@@ -526,10 +527,10 @@ export default function AdidasListMock() {
         <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
           Digital Visual Merchandising at Adidas brings together everything
           I&rsquo;m passionate about: experience design, fashion, and
-          technology. My interdisplinary background in business from owning a
-          fashion brand, web development, and visual merchandising allows me to
-          think holistically about how people move through digital spaces and
-          interact with a brand.
+          technology. My interdisplinary background from startin a fashion
+          brand, web development, and visual merchandising allows me to think
+          holistically about how people move through digital spaces and interact
+          with a brand.
           <br />
           <br /> Throughout my life, Adidas has been there —on my feet and in my
           everyday wear—as I chased new goals and stepped into unfamiliar
