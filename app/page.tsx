@@ -331,7 +331,7 @@ export default function AdidasListMock() {
             {
               title: "TRACK",
               src: "/family3.svg",
-              caption: "wore this Adidas shirt religiously #warriorsforever ",
+              caption: "wore this Adidas shirt religiously #dubs ",
               // no caption here → totally fine
             },
           ].map((card) => (
