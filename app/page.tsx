@@ -408,8 +408,7 @@ export default function AdidasListMock() {
                   Starting a fashion brand with my best friend meant betting on
                   myself and our business. “You got this” is what keeps me
                   pushing through long nights of designing, learning how to run
-                  a business, selling pieces, and picking up new skills along
-                  the way.
+                  a business, and picking up new skills along the way.
                   <br />
                   <br />
                   From coding and social media marketing to photography, graphic
