@@ -381,8 +381,9 @@ export default function AdidasListMock() {
           hours of working side jobs stop him from earning the Economics degree
           he always dreamed of. I honor this legacy of patience in my life as I
           now work to achieve my own goals @ USC and in my career.
-          <br /> <br /> When challenges arise, my parents have always , and
-          always will tell me, “You got this.” or for them "加油"
+          <br /> <br /> When challenges arise, my parents have always been
+          there—reminding me, time and time again, “You got this,” or, in their
+          words, 加油.
         </p>
       </section>
 
