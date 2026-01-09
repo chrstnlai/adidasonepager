@@ -453,7 +453,7 @@ export default function AdidasListMock() {
               src: "/kwkteam 1.svg",
               cta: (
                 <>
-                  At Kode With Klossy, saying “you got this” meant helping women
+                  At Kode With Klossy, saying “you got this” meant helping girls
                   see that they belonged in tech. Through curriculum design, I
                   worked on learning experiences that broke down intimidating
                   concepts and replaced doubt with confidence. <br />
