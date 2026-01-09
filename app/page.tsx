@@ -295,10 +295,13 @@ export default function AdidasListMock() {
                 </div>
 
                 <div className="pt-1 sm:pt-2">
-                  <button className="font-banner inline-flex items-center border border-black gap-2 bg-white/90 px-2 py-1.5 sm:px-3 sm:py-2 text-[12px] sm:text-[14px] font-semibold hover:bg-white">
+                  <a
+                    href="#foundation"
+                    className="font-banner inline-flex items-center border border-black gap-2 bg-white/90 px-2 py-1.5 sm:px-3 sm:py-2 text-[12px] sm:text-[14px] font-semibold hover:bg-white"
+                  >
                     Read what “You Got This” means to her
-                    <span aria-hidden>→</span>
-                  </button>
+                  </a>
+                  <span aria-hidden>→</span>
                 </div>
               </div>
             </div>
@@ -306,7 +309,11 @@ export default function AdidasListMock() {
         </div>
       </section>
       {/* SHOP BY SURFACE style section */}
-      <section className="mx-auto max-w-[1200px] px-4 pt-14 pb-10">
+
+      <section
+        id="foundation"
+        className="mx-auto max-w-[1200px] px-4 pt-14 pb-10"
+      >
         <h2 className=" text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
           THE FOUNDATION
         </h2>
