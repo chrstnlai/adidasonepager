@@ -385,7 +385,7 @@ export default function AdidasListMock() {
             INNER DRIVE
           </h2>
           <p className="mt-1 text-[16px] sm:text-[18px] text-black/70 font-title">
-            Doing it scared.
+            Doing it scared and being a self-starter
           </p>
 
           <div className="mt-12 space-y-14">
