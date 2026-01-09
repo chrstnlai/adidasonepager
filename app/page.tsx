@@ -443,15 +443,14 @@ export default function AdidasListMock() {
               src: "/kwkteam 1.svg",
               cta: (
                 <>
-                  "At Kode With Klossy, saying “you got this” meant helping
-                  women see that they belonged in tech. Through curriculum
-                  design, I worked on learning experiences that broke down
-                  intimidating concepts and replaced doubt with confidence.{" "}
-                  <br />
+                  At Kode With Klossy, saying “you got this” meant helping women
+                  see that they belonged in tech. Through curriculum design, I
+                  worked on learning experiences that broke down intimidating
+                  concepts and replaced doubt with confidence. <br />
                   <br /> Watching students go from uncertainty to ownership
                   reminded me that education isn’t just about teaching skills,
                   it’s about creating spaces where people feel empowered to take
-                  up space.",
+                  up space.
                 </>
               ),
             },
@@ -461,22 +460,22 @@ export default function AdidasListMock() {
               src: "/advol.jpeg",
               cta: (
                 <>
-                  "Volunteering with Norwood, saying “you got this” meant
-                  helping elementary school students believe they were capable
-                  of solving challenging math and coding problems.
+                  Volunteering with Norwood, saying “you got this” meant helping
+                  elementary school students believe they were capable of
+                  solving challenging math and coding problems.
                   <br />
                   <br /> Through teaching them how to code, I introduced
                   technology as a tool for curiosity, creativity, and
                   confidence. Watching students light up when something finally
-                  clicked showed me how early encouragement can shape how young
-                  people see their future and their place in it.",
+                  clicked showed me how early encouragement can shape how
+                  students see their future and their place in it.
                 </>
               ),
             },
           ].map((card) => (
             <div key={card.title} className="group w-full">
               {/* IMAGE CARD */}
-              <div className="relative h-[420px] w-full overflow-hidden">
+              <div className="relative h-[420px] gap-20 w-full overflow-hidden">
                 <Image
                   src={card.src}
                   alt={card.title}
