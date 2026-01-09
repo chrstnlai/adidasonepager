@@ -435,19 +435,43 @@ export default function AdidasListMock() {
               label: "Visual Merchandising Intern @ Fenty",
               title: "Disrupting the Beauty Industry",
               src: "/fenty.png",
-              cta: "At Fenty, visual merchandising became a way to say “you got this” without words.  Through 3D design and spatial storytelling, I helped create environments that reflect confidence, inclusivity, and self-belief, values at the core of a brand redefining beauty. ",
+              cta: "At Fenty, visual merchandising became a way to say “you got this” without words.  Through 3D design and spatial storytelling, I helped create environments that reflect confidence, inclusivity, and self-belief, values at the core of Fenty, brand redefining beauty. ",
             },
             {
               label: "Design Intern @ Kode with Klossy ",
               title: "CLOSING THE GENDER GAP IN TECH",
               src: "/kwkteam 1.svg",
-              cta: "At Kode With Klossy, saying “you got this” meant helping women see that they belonged in tech. Through curriculum design, I worked on learning experiences that broke down intimidating concepts and replaced doubt with confidence. Watching students go from uncertainty to ownership reminded me that education isn’t just about teaching skills, it’s about creating spaces where people feel empowered to take up space.",
+              cta: (
+                <>
+                  "At Kode With Klossy, saying “you got this” meant helping
+                  women see that they belonged in tech. Through curriculum
+                  design, I worked on learning experiences that broke down
+                  intimidating concepts and replaced doubt with confidence.{" "}
+                  <br />
+                  <br /> Watching students go from uncertainty to ownership
+                  reminded me that education isn’t just about teaching skills,
+                  it’s about creating spaces where people feel empowered to take
+                  up space.",
+                </>
+              ),
             },
             {
               label: "Coding Teacher @ Norwoord Street Elementary",
               title: "TEACHING STUDENTS HOW TO CODE",
               src: "/advol.jpeg",
-              cta: "Volunteering with Norwood, saying “you got this” meant helping elementary school students believe they were capable of solving hard problems. Through teaching them how to code, I introduced technology as a tool for curiosity, creativity, and confidence. Watching students light up when something finally clicked showed me how early encouragement can shape how young people see their future and their place in it.",
+              cta: (
+                <>
+                  "Volunteering with Norwood, saying “you got this” meant
+                  helping elementary school students believe they were capable
+                  of solving challenging math and coding problems.
+                  <br />
+                  <br /> Through teaching them how to code, I introduced
+                  technology as a tool for curiosity, creativity, and
+                  confidence. Watching students light up when something finally
+                  clicked showed me how early encouragement can shape how young
+                  people see their future and their place in it.",
+                </>
+              ),
             },
           ].map((card) => (
             <div key={card.title} className="group w-full">
@@ -492,18 +516,23 @@ export default function AdidasListMock() {
         </h2>
 
         <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
-          I&rsquo;m excited about Digital Visual Merchandising at Adidas because
-          it brings together everything I&rsquo;m passionate about: experience
-          design, fashion, and technology. My interdisplinary background in
-          business from owning a fashion brand, web development, and visual
-          merchandising allows me to think holistically about how people move
-          through digital spaces and interact with a brand. Throughout my life,
-          Adidas has been there —on my feet and in my everyday wear—as I chased
-          new goals and stepped into unfamiliar spaces. That constant presence
-          has made the brand feel incredibly personal to me. I see this role as
-          an opportunity to contribute meaningfully while continuing to grow my
-          abilities within a global brand that consistently champions innovation
-          and self-belief.
+          Digital Visual Merchandising at Adidas brings together everything
+          I&rsquo;m passionate about: experience design, fashion, and
+          technology. My interdisplinary background in business from owning a
+          fashion brand, web development, and visual merchandising allows me to
+          think holistically about how people move through digital spaces and
+          interact with a brand.
+          <br />
+          <br /> Throughout my life, Adidas has been there —on my feet and in my
+          everyday wear—as I chased new goals and stepped into unfamiliar
+          spaces. That constant presence has made the brand feel incredibly
+          personal to me.
+          <br />
+          <br /> I see this role as an opportunity to collaborate with other
+          talented Adidas summer interns and contribute to a global brand that
+          consistently champions innovation and self-belief, all the while
+          growing my visual merchandising practice and carrying the you got this
+          mindset into on-site experiences.
         </p>
       </section>
 
