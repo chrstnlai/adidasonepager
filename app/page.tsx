@@ -474,9 +474,7 @@ export default function AdidasListMock() {
                   elementary school students believe they were capable of
                   solving challenging math and coding problems.
                   <br />
-                  <br /> Through teaching them how to code, I introduced
-                  technology as a tool for curiosity, creativity, and
-                  confidence. Watching students light up when something finally
+                  <br /> Watching students light up when something finally
                   clicked showed me how early encouragement can shape how
                   students see their future and their place in it.
                 </>
