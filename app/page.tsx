@@ -377,7 +377,7 @@ export default function AdidasListMock() {
           <br /> <br />
           My mom&rsquo;s pho reminds me to marinate on ideas, trusting time and
           dedication to deepen the outcome. “The longer pho broth cooks, the
-          better it is.”, she always says.
+          better it is”, she always says.
           <br /> <br /> My dad&rsquo;s endurance teaches me to work with the
           utmost dedication and passion, as he didn&rsquo;t let the 8 years and
           hours of working side jobs stop him from earning the Economics degree
