@@ -436,13 +436,13 @@ export default function AdidasListMock() {
               label: "Visual Merchandising Intern @ Fenty",
               title: "Disrupting the Beauty Industry",
               src: "/fenty.png",
-              cta: "At Fenty, visual merchandising became a way to say “you got this” without words.  Through 3D design and spatial storytelling, I helped create environments that reflect confidence, inclusivity, and self-belief—values at the core of a brand redefining beauty. ",
+              cta: "At Fenty, visual merchandising became a way to say “you got this” without words.  Through 3D design and spatial storytelling, I helped create environments that reflect confidence, inclusivity, and self-belief, values at the core of a brand redefining beauty. ",
             },
             {
               label: "Design Intern @ Kode with Klossy ",
               title: "CLOSING THE GENDER GAP IN TECH",
               src: "/kwkteam 1.svg",
-              cta: "At Kode With Klossy, saying “you got this” meant helping women see that they belonged in tech. Through curriculum design, I worked on learning experiences that broke down intimidating concepts and replaced doubt with confidence. Watching students go from uncertainty to ownership reminded me that education isn’t just about teaching skills—it’s about creating spaces where people feel empowered to take up space.",
+              cta: "At Kode With Klossy, saying “you got this” meant helping women see that they belonged in tech. Through curriculum design, I worked on learning experiences that broke down intimidating concepts and replaced doubt with confidence. Watching students go from uncertainty to ownership reminded me that education isn’t just about teaching skills, it’s about creating spaces where people feel empowered to take up space.",
             },
             {
               label: "Coding Teacher @ Norwoord Street Elementary",
