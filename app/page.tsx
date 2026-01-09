@@ -107,6 +107,60 @@ function PlaceholderShoe({ tone = "cool" }: { tone?: "cool" | "warm" }) {
   );
 }
 
+type FourGridImg = { src: string; alt?: string };
+
+function FourImageGrid({ images }: { images: FourGridImg[] }) {
+  return (
+    <div className="grid grid-cols-2 gap-3 sm:gap-4">
+      {images.slice(0, 4).map((img, i) => (
+        <div
+          key={i}
+          className="relative aspect-square overflow-hidden bg-black/5"
+        >
+          <Image
+            src={img.src}
+            alt={img.alt ?? `image-${i + 1}`}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 50vw, 25vw"
+          />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function StoryRow({
+  flip = false,
+  title,
+  body,
+  images,
+}: {
+  flip?: boolean;
+  title: string;
+  body: string;
+  images: FourGridImg[];
+}) {
+  return (
+    <div className="grid items-center gap-8 md:grid-cols-12 md:gap-12">
+      {/* Images */}
+      <div className={flip ? "md:col-span-5 md:order-2" : "md:col-span-5"}>
+        <FourImageGrid images={images} />
+      </div>
+
+      {/* Text */}
+      <div className={flip ? "md:col-span-7 md:order-1" : "md:col-span-7"}>
+        <h3 className="text-[26px] sm:text-[32px] font-black uppercase leading-[1.05] font-original">
+          {title}
+        </h3>
+        <p className="mt-3 text-[16px] sm:text-[18px] leading-relaxed text-black/80 font-title">
+          {body}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default function AdidasListMock() {
   const [promoOpen, setPromoOpen] = useState(false);
 
@@ -130,7 +184,7 @@ export default function AdidasListMock() {
     };
   }, [promoOpen]);
   return (
-    <main className="min-h-screen bg-white text-black pt-10">
+    <main className="min-h-screen w-full bg-white text-black pt-10 overflow-x-hidden">
       <PromoBannerDrawer />
       {/* Top promo bar */}
       {/* Top promo bar */}
@@ -334,125 +388,124 @@ export default function AdidasListMock() {
         </div>
 
         <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
-          My parents defined what "You Got This" means to me. Immigrants of
-          theur Vietnam war, they made it to Oakland, CA to pursure their
-          dreams.
+          My parents defined what "You Got This" means to me. Immigrants of the
+          Vietnam war, they made it to Oakland, CA to pursure their dreams.
         </p>
       </section>
 
-      <section className="mx-auto max-w-[1200px] px-4 pt-14 pb-10">
-        <h2 className=" text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
-          THE APPLICATION
-        </h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {[
-            {
-              title: "PAVEMENT",
-              src: "/family1.svg",
-            },
-            {
-              title: "TRAIL",
-              src: "/family2.svg",
-            },
-            {
-              title: "TRACK",
-              src: "/family3.svg",
-              caption: "wore this Adidas shirt religiously #warriorsforever ",
-              // no caption here → totally fine
-            },
-          ].map((card) => (
-            <a
-              key={card.title}
-              className="group relative block overflow-hidden "
-            >
-              <div className="relative h-[250px] sm:h-[360px] md:h-[460px] w-full">
-                <Image
-                  src={card.src}
-                  alt={card.title}
-                  fill
-                  className="object-cover transition-transform duration-300 "
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
+      {/* APPLICATION — alternating 2x2 grid + text */}
+      <section className="bg-black/[0.10]">
+        <div className="mx-auto max-w-[1200px] px-4 py-14">
+          <h2 className="text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
+            THE APPLICATION
+          </h2>
+          <p className="mt-1 text-[16px] sm:text-[18px] text-black/70 font-title">
+            How I tell myself "You Got This"
+          </p>
 
-              {/* bottom-left label (kept strong, adidas-style) */}
+          <div className="mt-12 space-y-14">
+            <StoryRow
+              title="STARTING MY FASHION BRAND, AC unit"
+              body=" Shooting for the stars and starting my fashion brand"
+              images={[
+                { src: "/1.svg" },
+                { src: "/acshoes.svg" },
+                { src: "/tt5.svg" },
+                { src: "/acd.png" },
+              ]}
+            />
 
-              {/* optional caption */}
-              {card.caption && (
-                <div className="px-1  text-[11px] leading-relaxed text-black/70 font-title">
-                  {card.caption}
-                </div>
-              )}
-            </a>
-          ))}
+            <StoryRow
+              flip
+              title="LEADERSHIP ON CAMPUS"
+              body="Doing it scared. "
+              images={[
+                { src: "/DSC_0655.webp" },
+                { src: "/DSC_0763.jpg" },
+                { src: "/DSC_0902.jpg" },
+                { src: "/DSC02323.jpg" },
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* INITIATIVES STYLE SECTION */}
+      <section className="mx-auto max-w-[1200px] px-4 py-16">
+        {/* Header row */}
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-12 md:items-start">
+          <h2 className="md:col-span-6 text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
+            IN PRACTICE
+          </h2>
+
+          <p className="md:col-span-6 max-w-xl text-[16px] sm:text-[18px] leading-relaxed text-black/70 font-title">
+            From rethinking materials and developing ways to reduce our
+            footprint, to working alongside communities to drive meaningful
+            impact — this is how I turn ideas into action.
+          </p>
         </div>
 
-        <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
-          "You Got this" means chasing my dreams and putting myself in
-          posititons where I'm growing. It means shooting for the stars and
-          starting my dream fashion brand with my best friend. Going outside of
-          the box and making it the most innovative fashion brand.It means going
-          outside of my comfort zone, taking leadership positions
-        </p>
-      </section>
-      <section className="mx-auto max-w-[1200px] px-4 pt-14 pb-10">
-        <h2 className=" text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
-          PASSING IT ON
-        </h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        {/* Cards */}
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
           {[
             {
-              title: "PAVEMENT",
-              src: "/family1.svg",
+              label: "Visual Merchandising Intern @ Fenty",
+              title: "Disrupting the Beauty Industry",
+              src: "/fenty.png",
             },
             {
-              title: "TRAIL",
-              src: "/family2.svg",
+              label: "Design Intern @ Kode with Klossy ",
+              title: "CLOSING THE GENDER GAP IN TECH",
+              src: "/kwkteam 1.svg",
             },
             {
-              title: "TRACK",
-              src: "/family3.svg",
-              caption: "wore this Adidas shirt religiously #warriorsforever ",
-              // no caption here → totally fine
+              label: "Coding Teacher @ Norwoord Street Elementary",
+              title: "VOLUNTEERING",
+              src: "/advol.jpeg",
             },
           ].map((card) => (
-            <a
+            <div
               key={card.title}
-              className="group relative block overflow-hidden "
+              className="group relative h-[500px] w-full overflow-hidden"
             >
-              <div className="relative h-[250px] sm:h-[360px] md:h-[460px] w-full">
-                <Image
-                  src={card.src}
-                  alt={card.title}
-                  fill
-                  className="object-cover transition-transform duration-300 "
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
+              {/* Image */}
+              <Image
+                src={card.src}
+                alt={card.title}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+
+              {/* Dark gradient for text legibility */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+
+              {/* Label (top-left) */}
+              <div className="absolute left-4 top-4 bg-black px-3 py-1 text-[12px] font-bold uppercase tracking-wide text-white">
+                {card.label}
               </div>
 
-              {/* bottom-left label (kept strong, adidas-style) */}
+              {/* Bottom text */}
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <h3 className="text-[22px] font-extrabold uppercase leading-tight text-white">
+                  {card.title}
+                </h3>
 
-              {/* optional caption */}
-              {card.caption && (
-                <div className="px-1  text-[11px] leading-relaxed text-black/70 font-title">
-                  {card.caption}
+                <div className="mt-3 inline-flex items-center gap-2 text-[12px] font-bold uppercase tracking-wide text-white">
+                  READ MORE
+                  <span className="inline-block h-[2px] w-6 bg-white" />
                 </div>
-              )}
-            </a>
+              </div>
+            </div>
           ))}
         </div>
-
-        <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
-          "YOU GOT THIS" is a phrase I choose to say to others. As a
-          mission-driven creative, everything I do inside and out of career
-          revolves around making a change in my community.
-        </p>
       </section>
+
       <section className="mx-auto max-w-[1200px] px-4 pt-14 pb-10">
         <h2 className=" text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
           WHY ADIDAS?
         </h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        {/* <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {[
             {
               title: "PAVEMENT",
@@ -483,9 +536,7 @@ export default function AdidasListMock() {
                 />
               </div>
 
-              {/* bottom-left label (kept strong, adidas-style) */}
-
-              {/* optional caption */}
+            
               {card.caption && (
                 <div className="px-1  text-[11px] leading-relaxed text-black/70 font-title">
                   {card.caption}
@@ -493,7 +544,7 @@ export default function AdidasListMock() {
               )}
             </a>
           ))}
-        </div>
+        </div> */}
 
         <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
           Adidas has had my back since day 1. I believe I am a great candidate
@@ -503,54 +554,7 @@ export default function AdidasListMock() {
       </section>
 
       {/* Page content */}
-      <section className="mx-auto max-w-[1200px] px-4 pb-16 pt-6">
-        {/* breadcrumb + back */}
-        {/* <div className="flex items-center gap-3 text-[13px] text-black/70">
-          <a
-            className="inline-flex items-center gap-2 font-semibold tracking-wide text-black hover:underline underline-offset-4"
-            href="#"
-          >
-            ← <span>BACK</span>
-          </a>
-          <span className="text-black/30">|</span>
-          <span>
-            <a className="hover:underline underline-offset-4" href="#">
-              Home
-            </a>
-            <span className="mx-2 text-black/30">/</span>
-            <a className="hover:underline underline-offset-4" href="#">
-              Men
-            </a>
-          </span>
-        </div> */}
-
-        {/* title row */}
-        {/* <div className="mt-6 flex items-start justify-between gap-6">
-          <div className="max-w-3xl">
-            <h1 className="text-[44px] font-black uppercase leading-[0.95] tracking-tight md:text-[56px] font-original">
-              "YOU GOT THIS"
-            </h1>
-            <p className="mt-4 text-[14px] leading-relaxed text-black/75">
-              Kickstart your routine with the latest sneakers and activewear.
-              From running shoes that energize your stride to training gear that
-              keeps you cool and focused. Strength, cardio, or skill
-              focus—explore what fits your goals.
-            </p>
-            <button className="mt-2 text-[13px] font-semibold underline underline-offset-4 hover:opacity-80">
-              Show more
-            </button>
-          </div>
-
-          <div className="shrink-0 pt-2">
-            <button className="inline-flex items-center gap-3 border border-black px-5 py-3 text-[12px] font-bold uppercase tracking-wide hover:bg-black hover:text-white">
-              Filter &amp; Sort
-              <span className="inline-block h-[2px] w-4 bg-current opacity-80" />
-            </button>
-          </div>
-        </div> */}
-
-        {/* grid */}
-      </section>
+      <section className="mx-auto max-w-[1200px] px-4 pb-16 pt-6"></section>
 
       {/* Right-side feedback tab */}
       <button

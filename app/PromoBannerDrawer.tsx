@@ -64,25 +64,11 @@ export default function PromoBannerDrawer() {
               THANK YOU
             </h3>
             <p className="mt-4 max-w-[520px] font-title text-[14px] leading-relaxed text-black/80">
-              Thank you for your time and considering me for the Adidas DVM
-              Internship role. Feel free to contact me for any additional
-              questions or information. cmlai@usc.edu
+              Thank you for your time and considering me for the Adidas Digital
+              Visual Merchandising Internship role. Feel free to contact me for
+              any additional questions or information. cmlai@usc.edu
             </p>
-            {/* <a className="mt-8 inline-block text-[16px] font-extrabold uppercase underline underline-offset-4">
-              FROM THEM
-            </a> */}
           </div>
-
-          {/* <div>
-            <h3 className="text-[18px] font-extrabold uppercase tracking-wide">
-              WHY ADIDAS
-            </h3>
-            <p className="mt-4 max-w-[520px] text-[14px] leading-relaxed text-black/80">
-              Adidas represents discipline, repetition, and self-belief built
-              through work — values that shaped how I learned to say “you got
-              this” to myself and to others.
-            </p>
-          </div> */}
         </div>
       </div>
 
