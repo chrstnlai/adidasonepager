@@ -2,6 +2,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { ReactNode } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -105,7 +106,7 @@ function StoryRow({
 }: {
   flip?: boolean;
   title: string;
-  body: string;
+  body: ReactNode;
   images: FourGridImg[];
 }) {
   return (
@@ -401,7 +402,22 @@ export default function AdidasListMock() {
           <div className="mt-12 space-y-14">
             <StoryRow
               title="STARTING MY FASHION BRAND, AC unit"
-              body=" Starting a fashion brand with my best friend meant betting on myself and our business. “You got this” is what keeps me pushing past what’s expected,  through long nights of designing, learning how to run a business, selling pieces, and picking up new skills along the way. From coding and social media marketing to photography, graphic design, and fashion design, building this brand taught me that success is something you practice by showing up and putting in the effort one day at a time, even when the results don’t show up right away.  "
+              body={
+                <>
+                  Starting a fashion brand with my best friend meant betting on
+                  myself and our business. “You got this” is what keeps me
+                  pushing through long nights of designing, learning how to run
+                  a business, selling pieces, and picking up new skills along
+                  the way.
+                  <br />
+                  <br />
+                  From coding and social media marketing to photography, graphic
+                  design, and fashion design, building this brand taught me that
+                  success is something you practice by showing up and putting in
+                  the effort one day at a time, even when the results don’t show
+                  up right away.
+                </>
+              }
               images={[
                 { src: "/1.svg" },
                 { src: "/acshoes.svg" },
@@ -413,7 +429,7 @@ export default function AdidasListMock() {
             <StoryRow
               flip
               title="LEADERSHIP ON CAMPUS"
-              body="I led USC&rsquo;s first all women&rsquo;s make-a-thon, Break to Make. “You got this” wasn’t just something I told myself,  it was something I shared with other women at USC, reminding them that they belonged in tech and 'got this' too. The event was about creating space for women in hardware at USC and passing belief forward. I led and organized the event, grew in my public speaking and leadership skills, and took initiative to build something for my USC community.  "
+              body="I helped lead USC's first all-womens hack-a-thon, Break to Make, taking a leap into leadership beyond my comfort zone. “You got this” wasn't just something I told myself,  it was something I shared with other women at USC, reminding them that they belonged in tech and 'got this' too. The event was about creating space for women in hardware at USC and passing confidence forward. I led and organized the event, grew in my public speaking and leadership skills, and took initiative to build something for my USC community.  "
               images={[
                 { src: "/DSC_0655.webp" },
                 { src: "/DSC_0763.jpg" },
@@ -524,7 +540,7 @@ export default function AdidasListMock() {
 
         <p className="mt-6 max-w-3xl text-[18px] leading-relaxed text-black/80 font-title">
           Digital Visual Merchandising at Adidas brings together everything
-          I&rsquo;m passionate about: experience design, fashion, and
+          Isquo&r;m passionate about: experience design, fashion, and
           technology. My interdisplinary background from startin a fashion
           brand, web development, and visual merchandising allows me to think
           holistically about how people move through digital spaces and interact
