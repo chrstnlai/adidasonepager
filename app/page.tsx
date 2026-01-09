@@ -637,7 +637,8 @@ export default function AdidasListMock() {
 
             <p className="mt-10 text-[20px] font-title leading-relaxed">
               How likely are you to recommend{" "}
-              <span className="font-extrabold">Christine Lai</span> to a Adidas?
+              <span className="font-extrabold text-red-600">Christine Lai</span>{" "}
+              to an Adidas?
               <span className="text-red-600"> *</span>
             </p>
 
