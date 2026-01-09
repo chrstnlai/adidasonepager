@@ -255,7 +255,7 @@ export default function AdidasListMock() {
                 className="hover:underline underline-offset-4 font-banner"
                 href="#"
               >
-                PASS IT ON
+                PASSING IT ON
               </a>
               <a
                 className="hover:underline underline-offset-4 font-banner"
@@ -435,7 +435,7 @@ export default function AdidasListMock() {
         {/* Header row */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-12 md:items-start">
           <h2 className="md:col-span-6 text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
-            PASS IT ON
+            PASSING IT ON
           </h2>
 
           <p className="md:col-span-6 max-w-xl text-[16px] sm:text-[18px] leading-relaxed text-black/70 font-title">
