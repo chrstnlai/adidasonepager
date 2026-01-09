@@ -371,9 +371,8 @@ export default function AdidasListMock() {
           <br />
           From my mom&rsquo;s 3-day pho recipe to my dad&rsquo;s college
           journey, spending 8 years to earn his Bachelor&rsquo;s degree while he
-          worked side jobs to to bring his family over from Vietnam to America,
-          I&rsquo;ve learned about the beauty of dedicating time to see the
-          results.
+          worked to bring his family over from Vietnam to America, I&rsquo;ve
+          learned about the beauty of dedicating time to see the results.
           <br /> <br />
           My mom&rsquo;s pho reminds me to marinate on ideas, trusting time and
           dedication to deepen the outcome. “The longer the broth cooks, the
