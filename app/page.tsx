@@ -208,25 +208,25 @@ export default function AdidasListMock() {
             <nav className="hidden md:flex ml-auto mr-30 items-center gap-8 text-[16px] font-semibold tracking-wide">
               <a
                 className="hover:underline underline-offset-4 font-banner"
-                href="#"
+                href="#foundation"
               >
                 THE FOUNDATION
               </a>
               <a
                 className="hover:underline underline-offset-4 font-banner"
-                href="#"
+                href="#drive"
               >
                 INNER DRIVE
               </a>
               <a
                 className="hover:underline underline-offset-4 font-banner"
-                href="#"
+                href="#pass"
               >
                 PASSING IT ON
               </a>
               <a
                 className="hover:underline underline-offset-4 font-banner"
-                href="#"
+                href="#adidas"
               >
                 WHY ADIDAS
               </a>
@@ -386,7 +386,7 @@ export default function AdidasListMock() {
       </section>
 
       {/* APPLICATION — alternating 2x2 grid + text */}
-      <section className="bg-black/[0.10]">
+      <section id="drive" className="bg-black/[0.10]">
         <div className="mx-auto max-w-[1200px] px-4 py-14">
           <h2 className="text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
             INNER DRIVE
@@ -423,7 +423,7 @@ export default function AdidasListMock() {
       </section>
 
       {/* INITIATIVES STYLE SECTION */}
-      <section className="mx-auto max-w-[1200px] px-4 py-16">
+      <section id="pass" className="mx-auto max-w-[1200px] px-4 py-16">
         {/* Header row */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-12 md:items-start">
           <h2 className="md:col-span-6 text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
@@ -516,7 +516,7 @@ export default function AdidasListMock() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1200px] px-4 pt-14 pb-10">
+      <section id="adidas" className="mx-auto max-w-[1200px] px-4 pt-14 pb-10">
         <h2 className=" text-[30px] sm:text-[44px] font-black uppercase tracking-tight font-original">
           WHY ADIDAS?
         </h2>
