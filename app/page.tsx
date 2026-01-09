@@ -401,7 +401,7 @@ export default function AdidasListMock() {
           <div className="mt-12 space-y-14">
             <StoryRow
               title="STARTING MY FASHION BRAND, AC unit"
-              body=" Starting a fashion brand with my best friend meant betting on myself and our business. “You got this” is what keeps me pushing past what’s expected,  through long nights of designing, learning how to run a business, selling pieces, and picking up new skills along the way. From coding and social media marketing to photography, graphic design, and fashion design, building this brand taught me that confidence is something you practice by showing up and growing one day at a time.  "
+              body=" Starting a fashion brand with my best friend meant betting on myself and our business. “You got this” is what keeps me pushing past what’s expected,  through long nights of designing, learning how to run a business, selling pieces, and picking up new skills along the way. From coding and social media marketing to photography, graphic design, and fashion design, building this brand taught me that success is something you practice by showing up and putting in the effort one day at a time, even when the results don’t show up right away.  "
               images={[
                 { src: "/1.svg" },
                 { src: "/acshoes.svg" },
