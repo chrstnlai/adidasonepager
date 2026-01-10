@@ -489,7 +489,7 @@ export default function AdidasListMock() {
                   see that they belonged in tech. Through curriculum design, I
                   worked on learning experiences that broke down intimidating
                   concepts and replaced doubt with confidence. <br />
-                  <br /> Watching students go from uncertainty to ownership
+                  <br /> Seeing students go from uncertainty to ownership
                   reminded me that education isn’t just about teaching skills,
                   it’s about creating spaces where people feel empowered to take
                   up space.
